@@ -1,0 +1,317 @@
+*{
+ font-family: Lato;   
+}
+
+body{
+width:100%;
+height:100%;
+position: relative;
+}
+
+/* Main container */
+
+.main-container{
+display:flex;
+min-height:100vh;
+background-color: #f5f5fa;
+}
+
+/* Left-container */
+
+.Left-container{
+width: 84px;
+height: 1020px;
+display: flex;
+flex-direction: column;
+background-color: #FFFFFF;
+}
+
+.small-logo{
+height: 30px;
+width: 30px;
+margin-top: 26px;            
+margin-left: 14px;
+margin-right: 26px; 
+}
+
+.nav-menu{
+    margin-top:25px;
+    display:flex;
+    flex-direction:column;
+    gap: 37px;
+    margin-right: 31px;
+    flex:1;
+}
+
+.nav-item{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.nav-item:hover{
+background:#F3F5FF;
+}
+
+.profile{
+    width: 33px;
+    height: 32px;
+    margin-right: 24px;
+    margin-left: 14px;
+    margin-bottom: 25px;
+}
+
+/* Mid-container */
+
+.Mid-container{
+width: 389px;
+height: 1020px;
+padding: 10px 10px 10px 10px;
+display: flex;
+flex-direction: column;
+background-color: #FFFFFF;
+}
+
+.mid-first{
+font-family: Lato;
+font-weight: 300;
+font-size: 22px;
+letter-spacing: 0.4000000059604645px;
+line-height: normal;
+color: #1c1d21;
+margin-bottom: 2px;
+margin-left: 28px;
+margin-top: 12px;
+}
+
+.mid-second{
+font-family: Lato;
+font-weight: 700;
+font-size: 26px;
+line-height: 38px;
+color: #1c1d21;
+margin-top: 2px;
+margin-left: 28px;
+}
+
+.big-logo{
+width: 98px;
+height: 98px;
+margin-top: 84px;
+margin-left: 28px;
+}
+
+.messages{
+width: 330px;
+height: 424px;
+}
+
+.main-text{
+font-family: Lato;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+color: #1c1d21;
+}
+
+.messages img{
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-right: 17px;
+}
+
+.message-card{
+width: 330px;
+height: 90px;
+display:flex;
+align-items:flex-start;
+gap:8px;
+background:#fff;
+border-radius:12px;
+box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+.message-card{
+    flex:1;
+}
+
+.message-card h4{
+font-family: Lato;
+font-weight: 700;
+font-size: 14px;
+color: #1c1d21;
+margin:0;
+font-size:15px;
+margin-bottom: 2px;
+}
+
+.message-card p{
+font-family: Lato;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+color: #8181a5;
+margin-top:6px;
+font-size:12px;
+}
+
+.messages .message-card span{
+font-family: Lato;
+font-weight: 700;
+font-size: 12px;
+text-align: right;
+color: #8181a5;
+margin-left: auto;
+}
+
+.bottom-container{
+width: 330px;
+height: 208px;
+margin-top: 56px;
+background-color: #f5f5fa;
+position: relative;
+overflow:hidden;
+}
+
+
+.bottom-container .p1{
+font-weight: 700;
+font-size: 16px;
+color: #1c1d21;
+margin-top: 22px;
+margin-bottom: 3px;
+margin-left: 21px;
+}
+
+.bottom-container .p2{
+font-family: Lato;
+font-weight: 400;
+font-size: 14px;
+color: #8181a5;
+margin-top: 3px;
+margin-left: 21px;
+}
+
+
+.wave1{
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+}
+
+.wave2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+/* Right-container */
+
+.Right-container{
+width: 1209px;
+height: 1020px;
+display: flex;
+flex-direction: column;
+}
+
+.R-top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 30px;
+align-self: stretch;
+height: 84px;
+width: 1209;
+}
+
+.R-left{
+display:flex;
+align-items:center;
+gap: 20px;
+}
+
+.R-left p{
+font-family: Lato;
+font-weight: 700;
+font-size: 20px;
+height: 32px;
+width:97px;
+color: #1c1d21;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.R-right{
+display:flex;
+align-items:center;
+gap:6px
+}
+
+.icon,
+.menu-icon{
+cursor:pointer;
+}
+
+.dashboard-content{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    gap:15px;
+
+}
+
+
+.Right-image{
+display: flex;
+flex-direction: column;
+width:539px;
+height:379px;
+}
+
+.Right-container p{
+font-weight: 700;
+font-size: 20px;
+line-height: 32px;
+color: #1c1d21;
+}
+
+.Right-container .bottom-text1{
+font-weight: 700;
+font-size: 26px;
+line-height: 38px;
+text-align: center;
+color: #1c1d21;
+}
+
+.Right-container .bottom-text2{
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+text-align: center;
+color: #8181a5;
+}
+
+.setup-btn {
+display: inline-flex;
+justify-content: center;
+align-items: center;
+text-decoration: none; 
+cursor: pointer;
+width: 178.21189880371094px;
+height: 46px;
+border-radius: 7px;
+background-color: #5E81F4;
+color: #FFFFFF;
+font-weight: 700;
+font-size: 14px;
+line-height: normal;
+text-align: center;
+border-color: #5E81F4;
+}
