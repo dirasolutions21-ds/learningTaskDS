@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  max-height: none;
+
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.left-container {
+  width: 55%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 30px;
+  background: #ffffff;
+
+  position: relative;
+  z-index: 5;
+
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+.login-content {
+  width: 100%;
+  max-width: 318px;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.left-heading {
+
+  margin-bottom: 12px;
+  width: 404px;
+  height: 85px;
+  font-size: 29px;
+  line-height: 1.28;
+  font-weight: 700;
+  color: #202126;
+}
+
+.left-description {
+  margin-bottom: 67px;
+
+  font-size: 12px;
+  line-height: 1.5;
+  color: #9194aa;
+}
+
+.input-box {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.input-box label {
+  display: block;
+  margin-bottom: 8px;
+
+  font-size: 12px;
+  color: #7f82a0;
+}
+
+.input-field {
+  width: 100%;
+  position: relative;
+}
+
+.input-field input {
+  width: 100%;
+  height: 32px;
+
+  padding: 0 34px 10px 0;
+
+  border: none;
+  border-bottom: 1px solid #e6e8f0;
+  outline: none;
+
+  background: transparent;
+
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  color: #24252b;
+}
+
+.input-field input::placeholder{
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #24252b;
+    opacity: 1;
+}
+
+.input-field input:focus {
+  border-bottom-color: #5d7df4;
+}
+
+.input-field i {
+  position: absolute;
+  right: 4px;
+  bottom: 11px;
+
+  font-size: 13px;
+  color: #727791;
+}
+
+.options {
+  width: 100%;
+  margin-top: 42px;
+  margin-bottom: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  font-size: 12px;
+  color: #25262b;
+  cursor: pointer;
+}
+
+.remember input {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 18px;
+  height: 18px;
+
+  border: 5px solid #5d7df4;
+  border-radius: 50%;
+  background: #ffffff;
+
+  cursor: pointer;
+}
+
+.options a {
+  font-size: 12px;
+  color: #5378ef;
+  text-decoration: none;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+.button-group {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+}
+
+.button-group button {
+  width: 50%;
+  height: 42px;
+
+  border: none;
+  border-radius: 6px;
+
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.sign-in-btn {
+  color: #ffffff;
+  background: #5d7df3;
+}
+
+.sign-in-btn:hover {
+  background: #4d6fe3;
+}
+
+.sign-up-btn {
+  color: #5578ef;
+  background: #edf1fd;
+}
+
+.sign-up-btn:hover {
+  background: #e0e7fb;
+}
+
+.social-login {
+  width: 100%;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.social-login p {
+  margin-bottom: 14px;
+  font-size: 12px;
+  color: #8c8fa9;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #e6e8f0;
+  border-radius: 7px;
+
+  background: #ffffff;
+  color: #797d99;
+
+  font-size: 13px;
+  text-decoration: none;
+
+  transition: 0.2s ease;
+}
+
+.icon:hover {
+  color: #5d7df3;
+  border-color: #5d7df3;
+  transform: translateY(-2px);
+}
+
+.right-container {
+  width: 46%;
+  height: 100%;
+  margin-left: -1%;
+
+  position: relative;
+  overflow: hidden;
+
+  background: #3967ed;
+}
+
+
+.gradient-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 101%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  display: block;
+  z-index: 1;
+}
+
+
+.right-image {
+  position: absolute;
+  z-index: 2;
+
+  width: 110%;
+  max-width: none;
+  height: auto;
+
+  top: 50%;
+  left: 26%;
+
+  object-fit: contain;
+
+  
+  transform: translate(-36%, -50%);
+}
