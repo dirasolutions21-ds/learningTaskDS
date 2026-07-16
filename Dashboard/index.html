@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CraftUI Dashboard</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+
+    <!-- LEFT ICON SIDEBAR -->
+    <aside class="icon-sidebar">
+      <div class="mini-logo">C</div>
+
+      <nav class="icon-nav">
+        <a href="#" class="icon-link active"><i class="fa-solid fa-gauge-high"></i></a>
+        <a href="#" class="icon-link"><i class="fa-solid fa-briefcase"></i></a>
+        <a href="#" class="icon-link"><i class="fa-regular fa-square-check"></i></a>
+        <a href="#" class="icon-link"><i class="fa-regular fa-window-restore"></i></a>
+        <a href="#" class="icon-link"><i class="fa-regular fa-calendar-days"></i></a>
+        <a href="#" class="icon-link"><i class="fa-solid fa-user-group"></i></a>
+        <a href="#" class="icon-link dot"><i class="fa-regular fa-comments"></i></a>
+        <a href="#" class="icon-link"><i class="fa-solid fa-cube"></i></a>
+        <a href="#" class="icon-link"><i class="fa-solid fa-calculator"></i></a>
+        <a href="#" class="icon-link"><i class="fa-regular fa-map"></i></a>
+        <a href="#" class="icon-link alert"><i class="fa-solid fa-bullseye"></i></a>
+        <a href="#" class="icon-link"><i class="fa-regular fa-chart-bar"></i></a>
+        <a href="#" class="icon-link"><i class="fa-regular fa-circle-question"></i></a>
+      </nav>
+
+      <div class="avatar">
+        <img src="images/User Pic.svg" alt="Profile">
+        <span></span>
+      </div>
+    </aside>
+
+    <!-- ACTIVITY PANEL -->
+    <aside class="activity-panel">
+      <div class="brand-logo">C</div>
+
+      <div class="welcome">
+        <p>Welcome,</p>
+        <h2>CRAFTUI</h2>
+      </div>
+
+      <section class="side-section">
+        <h3>Latest updates</h3>
+
+        <div class="update-card">
+          <div class="update-icon"><i class="fa-solid fa-cart-arrow-down"></i></div>
+          <div>
+            <strong>Item sale #340-00</strong>
+          </div>
+          <small>+$890.00</small>
+        </div>
+
+        <div class="update-card">
+          <div class="update-icon"><i class="fa-solid fa-user-pen"></i></div>
+          <div><strong>New lead created</strong></div>
+          <small>30 min</small>
+        </div>
+
+        <div class="update-card">
+          <div class="update-icon"><i class="fa-solid fa-cart-arrow-down"></i></div>
+          <div><strong>Item sale #360-20</strong></div>
+          <small>+$940.00</small>
+        </div>
+
+        <div class="update-card">
+          <div class="update-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+          <div><strong>Items upload complete</strong></div>
+          <small>45 min</small>
+        </div>
+
+        <div class="update-card">
+          <div class="update-icon"><i class="fa-regular fa-bell"></i></div>
+          <div><strong>Email notifications sent</strong></div>
+          <small>2 hrs</small>
+        </div>
+      </section>
+
+      <section class="side-section upcoming">
+        <h3>Upcoming events</h3>
+
+        <div class="event-card">
+          <div class="event-head">
+            <span class="time blue-dot">05:48AM</span>
+            <span>•••</span>
+          </div>
+          <strong>Meeting with a client</strong>
+          <p>Tell how to boost website traffic</p>
+        </div>
+
+        <div class="event-card">
+          <div class="event-head">
+            <span class="time yellow-dot">10:28AM</span>
+            <span>•••</span>
+          </div>
+          <strong>New project discussion</strong>
+          <p>Business Cards Does Your Business</p>
+        </div>
+      </section>
+    </aside>
+
+    <!-- MAIN DASHBOARD -->
+    <main class="dashboard">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="square-btn"><i class="fa-solid fa-bars"></i></button>
+          <h1>Dashboard</h1>
+        </div>
+        <div class="topbar-actions">
+          <button class="square-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <button class="square-btn"><i class="fa-solid fa-circle-plus"></i></button>
+        </div>
+      </header>
+
+      <div class="dashboard-grid">
+
+        <!-- SALES -->
+        <section class="card sales-card">
+          <div class="card-header">
+            <h2>Your Sales</h2>
+            <div class="tabs">
+              <button class="tab active">Day</button>
+              <button class="tab">Week</button>
+              <button class="tab">Month</button>
+              <button class="calendar-btn"><i class="fa-regular fa-calendar-days"></i></button>
+            </div>
+          </div>
+
+          <div class="metric">
+            <strong>$142.000</strong>
+            <span>Total income</span>
+          </div>
+
+          <div class="line-chart sales-chart">
+            <div class="chart-grid">
+              <i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <svg viewBox="0 0 650 220" preserveAspectRatio="none" aria-hidden="true">
+              <path class="fill-blue" d="M0,120 C65,185 130,135 205,200 C245,235 242,45 302,55 C365,65 386,190 450,180 C535,168 550,85 650,125 L650,220 L0,220 Z"/>
+              <path class="stroke-blue" d="M0,120 C65,185 130,135 205,200 C245,235 242,45 302,55 C365,65 386,190 450,180 C535,168 550,85 650,125"/>
+            </svg>
+            <div class="point point-blue"></div>
+            <div class="tooltip">
+              <span>March</span>
+              <strong>$48.200</strong>
+            </div>
+          </div>
+
+          <div class="months"><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>Jun</span><span>Jul</span></div>
+        </section>
+
+        <!-- LATEST EVENTS -->
+        <section class="card latest-card">
+          <div class="card-header">
+            <h2>Latest Events</h2>
+            <button class="view-btn">View all</button>
+          </div>
+
+          <div class="table-head">
+            <span>Event</span><span>Details</span>
+          </div>
+
+          <div class="event-row">
+            <div class="event-type"><i class="fa-regular fa-file-lines"></i></div>
+            <div class="event-info">
+              <strong>Invoice #AA-04-19-1890678</strong>
+              <span>New Madieton LLC.</span>
+            </div>
+            <b>$118.00</b>
+          </div>
+
+          <div class="event-row">
+            <div class="event-type"><i class="fa-solid fa-user-group"></i></div>
+            <div class="event-info">
+              <strong>Client Bernard Stanley</strong>
+              <span>bernard.stanley@gmail.com</span>
+            </div>
+            <b>$3208.00</b>
+          </div>
+
+          <div class="event-row">
+            <div class="event-type"><i class="fa-regular fa-map"></i></div>
+            <div class="event-info">
+              <strong>Meeting with the client</strong>
+              <span>24 Vandervort Springs</span>
+            </div>
+            <b>29 Oct 2019</b>
+          </div>
+
+          <div class="event-row">
+            <div class="event-type"><i class="fa-regular fa-file-lines"></i></div>
+            <div class="event-info">
+              <strong>Invoice #AA-04-19-1890243</strong>
+              <span>Tyriquemouth LLC.</span>
+            </div>
+            <b>$578.00</b>
+          </div>
+        </section>
+
+        <!-- INCOME BREAKDOWN -->
+        <section class="card breakdown-card">
+          <div class="card-header">
+            <h2>Income Breakdown</h2>
+            <div class="tabs">
+              <button class="tab active">Day</button>
+              <button class="tab">Week</button>
+              <button class="tab">Month</button>
+              <button class="calendar-btn"><i class="fa-regular fa-calendar-days"></i></button>
+            </div>
+          </div>
+
+          <div class="donut-wrap">
+            <div class="donut">
+              <div class="donut-hole">
+                <strong>$85k</strong>
+              </div>
+              <span class="donut-label">16%</span>
+            </div>
+          </div>
+
+          <div class="legend-grid">
+            <div><span class="legend blue"></span>Marketing Channels <b>$22.0k</b></div>
+            <div><span class="legend orange"></span>Offline Channels <b>$18.6k</b></div>
+            <div><span class="legend green"></span>Direct Sales <b>$8.4k</b></div>
+            <div><span class="legend red"></span>Other Channels <b>$15.3k</b></div>
+          </div>
+        </section>
+
+        <!-- INCOME DETAILS -->
+        <section class="card income-card">
+          <div class="card-header">
+            <h2>Income Details</h2>
+            <div class="tabs">
+              <button class="tab active">Day</button>
+              <button class="tab">Week</button>
+              <button class="tab">Month</button>
+              <button class="calendar-btn"><i class="fa-regular fa-calendar-days"></i></button>
+            </div>
+          </div>
+
+          <div class="metric metric-green">
+            <div><strong>$142.000</strong> <i class="fa-solid fa-reply"></i></div>
+            <span>Total income</span>
+          </div>
+
+          <div class="line-chart income-chart">
+            <svg viewBox="0 0 650 190" preserveAspectRatio="none" aria-hidden="true">
+              <path class="fill-green" d="M0,20 C75,105 105,175 190,140 C255,113 252,60 335,95 C390,125 420,150 470,105 C550,34 605,35 650,80 L650,190 L0,190 Z"/>
+              <path class="stroke-green" d="M0,20 C75,105 105,175 190,140 C255,113 252,60 335,95 C390,125 420,150 470,105 C550,34 605,35 650,80"/>
+            </svg>
+            <div class="point point-green"></div>
+            <div class="tooltip income-tip">
+              <span>March</span>
+              <strong>$48.200</strong>
+            </div>
+          </div>
+
+          <div class="income-summary">
+            <div><strong>$342.000</strong><span>Total sales</span></div>
+            <div><strong>$200.000</strong><span>Spendings</span></div>
+            <div><strong>$142.000</strong><span>Income</span></div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
